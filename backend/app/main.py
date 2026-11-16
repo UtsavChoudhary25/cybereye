@@ -84,6 +84,7 @@ cors_origins = [o for o in settings.CORS_ORIGINS if o != "*"] if settings.ENV ==
 app.add_middleware(
     CORSMiddleware,
     allow_origins=cors_origins if cors_origins else ["http://localhost:5173", "http://127.0.0.1:5173"],
+    allow_origin_regex=r"https://.*(\.pages\.dev|\.vercel\.app|\.netlify\.app)",
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allow_headers=["*"],
