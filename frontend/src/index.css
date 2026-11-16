@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #0b0d13;
+    color: #e2e8f0;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow-x: hidden;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Precision Tactical Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0f17;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f2433;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333a50;
+}
+
+/* Matte Surface Components */
+.matte-panel {
+  background-color: #12151f;
+  border: 1px solid #1e2230;
+}
+
+.matte-panel-subtle {
+  background-color: #0e1018;
+  border: 1px solid #1a1d28;
+}
+
+.matte-card {
+  background-color: #131622;
+  border: 1px solid #1e2333;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.matte-card:hover {
+  border-color: #2e354c;
+  background-color: #161927;
+}
+
+.matte-input {
+  background-color: #0d0f17;
+  border: 1px solid #1f2435;
+  color: #f1f5f9;
+  transition: border-color 0.15s ease;
+}
+
+.matte-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+/* Status dots - solid, clean, non-neon */
+.status-dot-critical {
+  background-color: #dc2626;
+}
+
+.status-dot-high {
+  background-color: #d97706;
+}
+
+.status-dot-medium {
+  background-color: #3b82f6;
+}
+
+.status-dot-low {
+  background-color: #16a34a;
+}
